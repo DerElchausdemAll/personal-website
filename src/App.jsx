@@ -1,13 +1,18 @@
 import React from "react";
-import Button from "../src/components/Button";
+import HeroElement from "./components/organisms/hero-section";
+import Project from "./components/organisms/project";
+import About from "./components/organisms/about";
+import Contact from "./components/organisms/contact";
 
 const App = () => {
-  return (
-    <div>
-      <h1>Hello test</h1>
-      <Button>Click me!</Button>
-    </div>
-  );
+	return (
+		<div>
+			<HeroElement />
+			<Project />
+			<About />
+			<Contact />
+		</div>
+	);
 };
 
 export default App;
