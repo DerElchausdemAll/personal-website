@@ -11,7 +11,7 @@ const Menu = () => {
 					<div className="header-menu">
 						<Link
 							className="menu-links"
-							to="hero"
+							to="https://personal-website-five-pied.vercel.app"
 							spy={true}
 							smooth={true}
 							offset={0}
