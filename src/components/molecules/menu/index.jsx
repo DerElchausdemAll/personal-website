@@ -1,48 +1,64 @@
 import React from "react";
-import { StyledContainer } from "./styled";
-
 import { Link } from "react-scroll";
+import "../../../index.css";
 
 const Menu = () => {
 	return (
-		<StyledContainer>
-			<Link to="hero" spy={true} smooth={true} offset={0} duration={1000}>
-				home
-			</Link>
-			<Link to="project" spy={true} smooth={true} offset={0} duration={1000}>
-				project
-			</Link>
-			<Link to="about" spy={true} smooth={true} offset={0} duration={1000}>
-				about
-			</Link>
-			<Link to="contact" spy={true} smooth={true} offset={0} duration={1000}>
-				contact
-			</Link>
-		</StyledContainer>
+		<div className="header">
+			<div className="header-logo"></div>
+			<div className="header-wrapper">
+				<div>
+					<div className="header-menu">
+						<Link
+							className="menu-links"
+							to="hero"
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={1000}
+							style={{ cursor: "pointer" }}
+						>
+							home
+						</Link>
+						<Link
+							className="menu-links"
+							to="project"
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={1000}
+							style={{ cursor: "pointer" }}
+						>
+							project
+						</Link>
+						<Link
+							className="menu-links"
+							to="about"
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={1000}
+							style={{ cursor: "pointer" }}
+						>
+							about me
+						</Link>
+						<Link
+							className="menu-links"
+							to="contact"
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={1000}
+							style={{ cursor: "pointer" }}
+						>
+							contact
+						</Link>
+					</div>
+					<hr className="hr" />
+				</div>
+			</div>
+		</div>
 	);
 };
 
 export default Menu;
-
-// import React from "react";
-// import { Routes, Route, Link } from "react-router-dom";
-// import Project from "../../organisms/project";
-// import HeroElement from "../../organisms/hero-section";
-
-// const Menu = () => {
-// 	return (
-// 		<div>
-// 			<Routes>
-// 				{/* <a href="#">Home</a>
-// 				<a href="#project">project</a>
-// 				<a href="#">about</a>
-// 				<a href="#">contact</a> */}
-// 				<div>Test</div>
-// 				<Route path="/" element={<HeroElement />} />
-// 				<Route path="project" element={<Project />} />
-// 			</Routes>
-// 		</div>
-// 	);
-// };
-
-// export default Menu;

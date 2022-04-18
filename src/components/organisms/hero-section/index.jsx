@@ -1,63 +1,39 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Menu from "../../molecules/menu";
 import { StyledHero } from "./styled";
+import "../../../index.css";
 
 const HeroElement = () => {
-	const [offsetY, setOffsetY] = useState(0);
-	const handleScroll = () => setOffsetY(window.pageYOffset);
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-
-		return () => window.removeEventListener("scroll", handleScroll);
-	}, []);
-
 	return (
 		<StyledHero id="hero">
 			<Menu />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<div style={{ transform: `translateX(-${offsetY * 0.5}px)`, textAlign: "center" }}>
-				Huhu
+			<div className="hero">
+				<div className="hero-left">
+					<div className="hero-left-wrapper">
+						<h2 className="hero-intro">Hello, my name is</h2>
+						<h1 className="hero-name">Jan Peter</h1>
+						<div className="hero-title">
+							<div className="hero-title-wrapper">
+								<div className="hero-title-item">Web Developer</div>
+								<div className="hero-title-item">Journalist</div>
+
+								<div className="hero-title-item">Writer</div>
+								<div className="hero-title-item">Father</div>
+							</div>
+						</div>
+						<div className="hero-description">
+							This is my little portfolio page of four month coding experience so far.
+							Originally I studied journalism, history and media, but finally after
+							some family reasons and the covid pandemic, I decided to discover the
+							space of coding.
+						</div>
+					</div>
+				</div>
+				<div className="hero-right">
+					<div className="hero-shape"></div>
+					<div className="hero-image"></div>
+				</div>
 			</div>
-			<div
-				style={{
-					transform: `translateX(${offsetY * 0.5}px)`,
-					color: "white",
-					textAlign: "center",
-				}}
-			>
-				Huhu
-			</div>
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<div
-				style={{
-					transform: `translateY(-${offsetY * 1.5}px)`,
-					borderRadius: "50%",
-					height: 100,
-					width: 100,
-					background: "white",
-				}}
-			></div>
-			<br />
 		</StyledHero>
 	);
 };
