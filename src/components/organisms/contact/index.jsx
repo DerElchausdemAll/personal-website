@@ -1,7 +1,5 @@
 import React from "react";
 import { StyledContact } from "./styled";
-// import ArrowBackIosNewSharpIcon from "@mui/icons-material/ArrowBackIosNewSharp";
-// import { Link } from "react-scroll";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
