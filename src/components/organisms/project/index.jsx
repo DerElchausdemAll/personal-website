@@ -84,7 +84,7 @@ const Project = ({ backgroundRef }) => {
 									? "This is a project for adding movies to your watchlist. You can also browse through the most popular movies. It is still in progress."
 									: current === 2
 									? "A little Todo-App with an edit and delete feature. The Todos are stored in the local storage. I build this with React, Zustand and Immer."
-									: "This is my capstone project Toy Cycle. It's an App for renting Toys. I build this App with Next.js and React. The data is stored in a mongo database."}
+									: "This is my capstone project Toy Cycle. It's an App for renting Toys. I build this App with Next.js and React. The data is stored in a MongoDB database."}
 							</div>
 							<div className="p-button-wrapper">
 								<Button
