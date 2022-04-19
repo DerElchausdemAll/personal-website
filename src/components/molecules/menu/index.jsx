@@ -29,7 +29,7 @@ const Menu = () => {
 							duration={1000}
 							style={{ cursor: "pointer" }}
 						>
-							project
+							projects
 						</Link>
 						<Link
 							className="menu-links"
