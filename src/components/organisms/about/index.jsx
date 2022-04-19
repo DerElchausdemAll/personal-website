@@ -75,7 +75,7 @@ const About = ({ test }) => {
 						Surfing • Culture • Creativity • Journalism • Coding • Bouldering • Politics
 						• Surfing • Culture
 					</div>
-					<div
+					{/* <div
 						style={{
 							transform: `translateX(${offsetY * 0.1}px)`,
 						}}
@@ -87,7 +87,7 @@ const About = ({ test }) => {
 						• Culture • Creativity • Journalism • Coding • Bouldering • Politics •
 						Surfing • Culture • Creativity • Journalism • Coding • Bouldering • Politics
 						• Surfing • Culture
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</StyledAbout>

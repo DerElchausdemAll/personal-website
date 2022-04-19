@@ -22,10 +22,10 @@ const HeroElement = () => {
 							</div>
 						</div>
 						<div className="hero-description">
-							This is my little portfolio page of four month coding experience so far.
-							Originally I studied journalism, history and media, but finally after
-							some family reasons and the covid pandemic, I decided to discover the
-							space of coding.
+							This is my little portfolio page of four month coding experience so far
+							(the portfolio is not yet 100% responsive). Originally I studied
+							journalism, history and media, but finally after some family reasons and
+							the covid-19 pandemic, I decided to discover the space of coding.
 						</div>
 					</div>
 				</div>
