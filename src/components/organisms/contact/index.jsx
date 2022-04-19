@@ -63,15 +63,17 @@ const Contact = ({ test }) => {
 							</form>
 						</div>
 						<div className="c-icons">
-							<Link href="https://github.com/DerElchausdemAll">
-								<GitHubIcon sx={{ fontSize: "50px" }} />
-							</Link>
-							<Link href="https://www.linkedin.com/in/jan-peter-95242a233/">
-								<LinkedInIcon sx={{ fontSize: "50px" }} />
-							</Link>
+							<div>
+								<Link href="https://github.com/DerElchausdemAll">
+									<GitHubIcon sx={{ fontSize: "50px" }} />
+								</Link>
+								<Link href="https://www.linkedin.com/in/jan-peter-95242a233/">
+									<LinkedInIcon sx={{ fontSize: "50px" }} />
+								</Link>
+							</div>
+							<BackToMenu />
 						</div>
 					</div>
-					<BackToMenu />
 				</div>
 			</div>
 		</StyledContact>

@@ -429,15 +429,9 @@ a {
 
 .c-icons {
 	display: flex;
-	justify-content: space-evenly;
+	flex-direction: row;
+	justify-content: space-between;
 	padding-top: 20px;
-	width: 20%;
-}
-
-.back-to-menu {
-	display: flex;
-	justify-content: center;
-	height: 10%;
 }
 
 /* HELLO HERE IS ANOTHER SCREEN SIZE */
@@ -450,7 +444,7 @@ a {
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
-		font-size: 3.5rem;
+		font-size: 3rem;
 		font-weight: bold;
 		/* background: red; */
 	}
@@ -492,8 +486,8 @@ a {
 	}
 
 	.slider-image {
-		width: 300px;
-		height: 570px;
+		width: 280px;
+		height: 530px;
 		border-radius: 10px;
 		border: 1px solid white;
 	}
@@ -524,12 +518,12 @@ a {
 	}
 
 	.a-wrapper-two {
-		font-size: 2rem;
+		font-size: 1.8rem;
 		padding: 50px;
 	}
 
 	.c-title {
-		font-size: 5rem;
+		font-size: 3.5rem;
 		text-align: center;
 	}
 }
@@ -544,7 +538,7 @@ a {
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
-		font-size: 3rem;
+		font-size: 2.5rem;
 		font-weight: bold;
 		/* background: blue; */
 	}
@@ -586,8 +580,8 @@ a {
 	}
 
 	.slider-image {
-		width: 300px;
-		height: 544px;
+		width: 250px;
+		height: 484px;
 		border-radius: 10px;
 		border: 1px solid white;
 	}
@@ -625,12 +619,12 @@ a {
 	}
 
 	.a-wrapper-two {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		padding: 50px;
 	}
 
 	.c-title {
-		font-size: 4rem;
+		font-size: 3rem;
 		text-align: center;
 	}
 }
