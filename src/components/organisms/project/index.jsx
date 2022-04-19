@@ -88,9 +88,9 @@ const Project = ({ backgroundRef }) => {
 							</div>
 							<div className="p-button-wrapper">
 								<Button
-									variant="outlined"
+									variant="contained"
 									sx={{
-										fontSize: "2rem",
+										fontSize: "1rem",
 										width: "250px",
 										padding: "10px",
 									}}
@@ -109,7 +109,7 @@ const Project = ({ backgroundRef }) => {
 								</Button>
 								<Button
 									variant="outlined"
-									sx={{ fontSize: "2rem", width: "250px", padding: "10px" }}
+									sx={{ fontSize: "1rem", width: "250px", padding: "10px" }}
 								>
 									{current === 1 ? (
 										<a href="https://github.com/DerElchausdemAll/movie-app">
