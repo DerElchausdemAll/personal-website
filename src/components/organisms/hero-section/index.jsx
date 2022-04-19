@@ -16,9 +16,7 @@ const HeroElement = () => {
 							<div className="hero-title-wrapper">
 								<div className="hero-title-item">Web Developer</div>
 								<div className="hero-title-item">Journalist</div>
-
-								<div className="hero-title-item">Writer</div>
-								<div className="hero-title-item">Father</div>
+								<div className="hero-title-item">Papa</div>
 							</div>
 						</div>
 						<div className="hero-description">
