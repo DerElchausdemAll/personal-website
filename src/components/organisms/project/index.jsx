@@ -34,14 +34,12 @@ const Project = ({ backgroundRef }) => {
 		<StyledProject id="project">
 			<div className="p">
 				<div className="p-headline">
-					<p ref={myRef2}></p>
-					<p ref={myRef}></p>
 					<h2 className={`${headlineIsVisible ? "p-text1-ref" : "p-text1"}`}>
-						first steps of coding
+						my showcase
 					</h2>
 					<p ref={backgroundRef}></p>
 					<h1 className={`${headline2IsVisible ? "p-text2-ref" : "p-text2"}`}>
-						my showcase
+						first steps of coding
 					</h1>
 				</div>
 				<div className="p-content">
@@ -79,49 +77,58 @@ const Project = ({ backgroundRef }) => {
 							</div>
 						</div>
 					</div>
-
-					<div className="p-central-wrapper">
-						<div className="p-info">
-							{current === 1
-								? "This is a project for adding movies to your watchlist. You can also browse through the most popular movies. It is still in progress."
-								: current === 2
-								? "A nice little Todo-App with an edit and delete feature. The Todos are stored in the local storage. I build this with React, Zustand and Immer."
-								: "This is my capstone project Toy Cycle. It's an App for renting Toys. I build this App with Next.js and React. The data is stored in a mongo database."}
-						</div>
-						<div className="p-button-wrapper">
-							<Button variant="outlined" sx={{ fontSize: "2rem", width: "250px" }}>
-								{current === 1 ? (
-									<a href="https://movie-app-theta-one.vercel.app">Homepage</a>
-								) : current === 2 ? (
-									<a href="https://react-practice-repo.vercel.app">Homepage</a>
-								) : (
-									<a href="https://nf-capstone-mauve.vercel.app">Homepage</a>
-								)}
-							</Button>
-							<Button variant="outlined" sx={{ fontSize: "2rem", width: "250px" }}>
-								{current === 1 ? (
-									<a href="https://github.com/DerElchausdemAll/movie-app">
-										GitHub
-									</a>
-								) : current === 2 ? (
-									<a href="https://github.com/DerElchausdemAll/react-practice-repo">
-										GitHub
-									</a>
-								) : (
-									<a href="https://github.com/DerElchausdemAll/nf-capstone">
-										GitHub
-									</a>
-								)}
-							</Button>
-						</div>
-					</div>
-
 					<div className="p-right-wrapper">
-						<img
-							className="p-image"
-							src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-							alt="coding"
-						></img>
+						<div className="p-description-box">
+							<div className="p-description">
+								{current === 1
+									? "This is a project for adding movies to your watchlist. You can also browse through the most popular movies. It is still in progress."
+									: current === 2
+									? "A little Todo-App with an edit and delete feature. The Todos are stored in the local storage. I build this with React, Zustand and Immer."
+									: "This is my capstone project Toy Cycle. It's an App for renting Toys. I build this App with Next.js and React. The data is stored in a mongo database."}
+							</div>
+							<div className="p-button-wrapper">
+								<Button
+									variant="outlined"
+									sx={{
+										fontSize: "2rem",
+										width: "250px",
+										padding: "10px",
+									}}
+								>
+									{current === 1 ? (
+										<a href="https://movie-app-theta-one.vercel.app">
+											Homepage
+										</a>
+									) : current === 2 ? (
+										<a href="https://react-practice-repo.vercel.app">
+											Homepage
+										</a>
+									) : (
+										<a href="https://nf-capstone-mauve.vercel.app">Homepage</a>
+									)}
+								</Button>
+								<Button
+									variant="outlined"
+									sx={{ fontSize: "2rem", width: "250px", padding: "10px" }}
+								>
+									{current === 1 ? (
+										<a href="https://github.com/DerElchausdemAll/movie-app">
+											GitHub
+										</a>
+									) : current === 2 ? (
+										<a href="https://github.com/DerElchausdemAll/react-practice-repo">
+											GitHub
+										</a>
+									) : (
+										<a href="https://github.com/DerElchausdemAll/nf-capstone">
+											GitHub
+										</a>
+									)}
+								</Button>
+								<p ref={myRef2}></p>
+								<p ref={myRef}></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -235,3 +242,107 @@ export default Project;
 // };
 
 // export default Project;
+
+/////////////
+/////////////
+/////////////
+/////////////
+/////////////
+
+{
+	/* <StyledProject id="project">
+			<div className="p">
+				<div className="p-headline">
+					<p ref={myRef2}></p>
+					<p ref={myRef}></p>
+					<h2 className={`${headlineIsVisible ? "p-text1-ref" : "p-text1"}`}>
+						first steps of coding
+					</h2>
+					<p ref={backgroundRef}></p>
+					<h1 className={`${headline2IsVisible ? "p-text2-ref" : "p-text2"}`}>
+						my showcase
+					</h1>
+				</div>
+				<div className="p-content">
+					<div className="p-left-wrapper">
+						<div className="p-left-slider">
+							<div className="slider">
+								{SliderData.map((slide, index) => {
+									return (
+										<div
+											className={index === current ? "slide active" : "slide"}
+										>
+											{index === current && (
+												<div className="slider-wrapper">
+													<ArrowBackIosNewIcon
+														className="slider-arrow-left"
+														onClick={prevSlide}
+														sx={{ fontSize: "40px" }}
+													/>
+													<img
+														key={index}
+														src={slide.image}
+														alt="lolo"
+														className="slider-image"
+													/>
+													<ArrowForwardIosIcon
+														className="slider-arrow-right"
+														onClick={nextSlide}
+														sx={{ fontSize: "40px" }}
+													/>
+												</div>
+											)}
+										</div>
+									);
+								})}
+							</div>
+						</div>
+					</div>
+
+					<div className="p-central-wrapper">
+						<div className="p-info">
+							{current === 1
+								? "This is a project for adding movies to your watchlist. You can also browse through the most popular movies. It is still in progress."
+								: current === 2
+								? "A nice little Todo-App with an edit and delete feature. The Todos are stored in the local storage. I build this with React, Zustand and Immer."
+								: "This is my capstone project Toy Cycle. It's an App for renting Toys. I build this App with Next.js and React. The data is stored in a mongo database."}
+						</div>
+						<div className="p-button-wrapper">
+							<Button variant="outlined" sx={{ fontSize: "2rem", width: "250px" }}>
+								{current === 1 ? (
+									<a href="https://movie-app-theta-one.vercel.app">Homepage</a>
+								) : current === 2 ? (
+									<a href="https://react-practice-repo.vercel.app">Homepage</a>
+								) : (
+									<a href="https://nf-capstone-mauve.vercel.app">Homepage</a>
+								)}
+							</Button>
+							<Button variant="outlined" sx={{ fontSize: "2rem", width: "250px" }}>
+								{current === 1 ? (
+									<a href="https://github.com/DerElchausdemAll/movie-app">
+										GitHub
+									</a>
+								) : current === 2 ? (
+									<a href="https://github.com/DerElchausdemAll/react-practice-repo">
+										GitHub
+									</a>
+								) : (
+									<a href="https://github.com/DerElchausdemAll/nf-capstone">
+										GitHub
+									</a>
+								)}
+							</Button>
+						</div>
+					</div>
+
+					<div className="p-right-wrapper">
+						<img
+							className="p-image"
+							src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+							alt="coding"
+						></img>
+					</div>
+				</div>
+			</div>
+		</StyledProject> */
+}
