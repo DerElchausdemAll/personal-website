@@ -21,9 +21,9 @@ const HeroElement = () => {
 						</div>
 						<div className="hero-description">
 							This is my little portfolio page (still under construction because it is
-							not yet 100% responsive). Originally I studied journalism, history and
+							not 100% responsive yet). Originally I studied journalism, history and
 							media, but finally after some family reasons and the covid-19 pandemic,
-							I decided to discover the space of coding last November.
+							I decided to discover the world of coding last November.
 						</div>
 					</div>
 				</div>
